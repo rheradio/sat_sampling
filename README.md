@@ -2,7 +2,7 @@
 
 Material of the experiments reported in:
 
-*Ruben Heradio, David Fernandez-Amoros, Jose Galindo, and David Benavides*. 
+*Ruben Heradio, David Fernandez-Amoros, José Galindo, and David Benavides*. 
 **Scalable and Uniform SAT-Sampling for Configurable Systems.** 
 
 *This paper has been submitted for publication to the 24TH ACM INTERNATIONAL SYSTEMS AND SOFTWARE PRODUCT LINE CONFERENCE (SPLC 2020).*
@@ -23,7 +23,7 @@ This repository is organized into two directories:
 
 The following figure sketches the method we propose for verifying if a sampler generates uniform random samples of a model encoded as a Boolean formula. It compares *empirical information* about a sample with *theoretical information* about the whole population of SAT solutions that the model represents.
 
-![Scheme summarizing the scripts](https://github.com/rheradio/sat_sampling/blob/master/scripts/goodness_of_fit_schema.png)
+![Schema summarizing the goodness-of-fit test](https://github.com/rheradio/sat_sampling/blob/master/scripts/goodness_of_fit_schema.png)
 
 * [population_desc_stats.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/population_desc_stats.csv) describes the time required to characterize the SAT solution population concerning the variable probability distribution.
 * [samplers_stats.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/samplers_stats.csv) describes the time each sampler required to generate the samples.
@@ -37,13 +37,29 @@ The benchmark we used, and all the samples generated are available at [![DOI](ht
 * `samples`: samples generated in each sampler's original format.
 * `std_samples`: standardized samples. Each sample is characterized by the model variable frequencies.
 
-
-
-
-
-
-
 ## Scripts
 
-![Scheme summarizing the scripts](https://github.com/rheradio/sat_sampling/blob/master/scripts/scripts_workflow_schema.png)
+Our scripts are written in the [R language](https://cran.r-project.org/). After installing R,
+you'll need to install several R packages. To do so, run the following R code:
 
+```R
+list.of.packages <- c("forcats", "gmp", "gridExtra", "philentropy", "philentropy", "psych",
+                      "tictoc", "tidyverse", "rapport", "Rmpfr", "R.utils", "pwr")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+```
+
+The following figure summarizes the scripts' workflow.
+
+![Schema summarizing the scripts' workflow](https://github.com/rheradio/sat_sampling/blob/master/scripts/scripts_workflow_schema.png)
+
+[run_samplers.r](https://github.com/rheradio/sat_sampling/blob/master/scripts/run_samplers.r) requires to have installed the following programs:
+
+* [Unigen2](https://bitbucket.org/kuldeepmeel/unigen)
+* [QuickSampler](https://github.com/RafaelTupynamba/quicksampler)
+* [Spur](https://github.com/ZaydH/spur)
+* [Smarch](https://github.com/jeho-oh/Kclause_Smarch)
+* [PicoSAT](http://fmv.jku.at/picosat/)
+* [probability](https://github.com/rheradio/VMStatAnal)
+
+Also, at the beginning of [run_samplers.r](https://github.com/rheradio/sat_sampling/blob/master/scripts/run_samplers.r) you'll have to configure the constants QUICK_SAMPLER, QUICK_SAMPLER_VALID, SMARCH, SPUR, UNIGEN2_dir, and UNIGEN2 according to the locations where you have installed the samplers.
