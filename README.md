@@ -53,6 +53,12 @@ The following figure summarizes the scripts' workflow.
 
 ![Schema summarizing the scripts' workflow](https://github.com/rheradio/sat_sampling/blob/master/scripts/scripts_workflow_schema.png)
 
+The syntax to run all scripts is:
+
+`Rscript script_name.r directory_name`
+
+Where `directory_name` is the folder that stores the models. Models can be downloaded at  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712298.svg)](https://doi.org/10.5281/zenodo.3712298).
+
 [run_samplers.r](https://github.com/rheradio/sat_sampling/blob/master/scripts/run_samplers.r) requires to have installed the following programs:
 
 * [Unigen2](https://bitbucket.org/kuldeepmeel/unigen)
