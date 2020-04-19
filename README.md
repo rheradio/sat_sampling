@@ -39,7 +39,7 @@ The benchmark we used, and all the samples generated are available at [![DOI](ht
 
 ## Script code
 
-Our scripts are written in the [R language](https://cran.r-project.org/). After installing R,
+Our scripts are written in the [R language](https://cran.r-project.org/). In addition to R,
 you'll need to install several R packages. To do so, run the following R code:
 
 ```R
