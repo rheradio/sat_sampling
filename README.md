@@ -13,7 +13,7 @@ Some relevant analyses on configurable software systems remain intractable becau
 
 ## Summary
 
-This repository is organized in two directories:
+This repository is organized into two directories:
 
 * [experimental_results](https://github.com/rheradio/sat_sampling/tree/master/experimental_results), includes our experimental results.
 * [scripts](https://github.com/rheradio/sat_sampling/tree/master/scripts), includes the R scripts we wrote to run the experiments.
@@ -21,8 +21,27 @@ This repository is organized in two directories:
 
 ## Experimental results
 
-The next figure sketches the method we propose for verifying if a sampler generates uniform random samples of a model encoded as a Boolean formula. It compares *empirical information* about a sample with *theoretical information* about the whole population of SAT solutions that the model represents
+The following figure sketches the method we propose for verifying if a sampler generates uniform random samples of a model encoded as a Boolean formula. It compares *empirical information* about a sample with *theoretical information* about the whole population of SAT solutions that the model represents.
+
 ![Scheme summarizing the scripts](https://github.com/rheradio/sat_sampling/blob/master/scripts/goodness_of_fit_schema.png)
+
+* [population_desc_stats.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/population_desc_stats.csv) describes the time required to characterize the SAT solution population concerning the variable probability distribution.
+* [samplers_stats.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/samplers_stats.csv) describes the time each sampler required to generate the samples.
+* [sampler_pvalues.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/sampler_pvalues.csv) describes the results of the goodness of fit tests.
+
+The benchmark we used, and all the samples generated are available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712298.svg)](https://doi.org/10.5281/zenodo.3712298). There is a zip file per model, which is organized into the following directories:
+
+* `bool_formula`: includes the model's Boolean encoding as a BDD (`.dddmp`) and a CNF (`.dimacs`).
+* `goodness_of_fit`: includes a graphical analysis of the model's goodness-of-fit.
+* `population_desc`: population variable probabilities.
+* `samples`: samples generated in each sampler's original format.
+* `std_samples`: standardized samples. Each sample is characterized by the model variable frequencies.
+
+
+
+
+
+
 
 ## Scripts
 
