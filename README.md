@@ -37,7 +37,7 @@ The benchmark we used, and all the samples generated are available at [![DOI](ht
 * `samples`: samples generated in each sampler's original format.
 * `std_samples`: standardized samples. Each sample is characterized by the model variable frequencies.
 
-## Scripts
+## Script code
 
 Our scripts are written in the [R language](https://cran.r-project.org/). After installing R,
 you'll need to install several R packages. To do so, run the following R code:
