@@ -22,9 +22,9 @@ This repository is organized in two directories:
 ## Experimental results
 
 The next figure sketches the method we propose for verifying if a sampler generates uniform random samples of a model encoded as a Boolean formula. It compares *empirical information* about a sample with *theoretical information* about the whole population of SAT solutions that the model represents
-![alt text](https://github.com/rheradio/sat_sampling/blob/master/scripts/goodness_of_fit_schema.png "Scheme summarizing the scripts' 
+![Scheme summarizing the scripts](https://github.com/rheradio/sat_sampling/blob/master/scripts/goodness_of_fit_schema.png)
 
 ## Scripts
 
-![alt text](https://github.com/rheradio/sat_sampling/blob/master/scripts/scripts_workflow_schema.png "Scheme summarizing the scripts" workflow")
+![Scheme summarizing the scripts](https://github.com/rheradio/sat_sampling/blob/master/scripts/scripts_workflow_schema.png)
 
