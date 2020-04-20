@@ -1,11 +1,9 @@
 # Scalable and Uniform SAT-Sampling for Configurable Systems
 
-Material of the experiments reported in:
+Material of the experiments reported in the following paper submitted to the 24TH ACM INTERNATIONAL SYSTEMS AND SOFTWARE PRODUCT LINE CONFERENCE (SPLC 2020):
 
 *Ruben Heradio, David Fernandez-Amoros, José Galindo, and David Benavides*. 
 **Scalable and Uniform SAT-Sampling for Configurable Systems.** 
-
-*This paper has been submitted for publication to the 24TH ACM INTERNATIONAL SYSTEMS AND SOFTWARE PRODUCT LINE CONFERENCE (SPLC 2020).*
 
 ## Abstract
 
