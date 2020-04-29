@@ -27,7 +27,8 @@ The following figure sketches the method we propose for verifying if a sampler g
 * [samplers_stats.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/samplers_stats.csv) describes the time each sampler required to generate the samples.
 * [sampler_pvalues.csv](https://github.com/rheradio/sat_sampling/blob/master/experimental_results/sampler_pvalues.csv) describes the results of the goodness of fit tests.
 
-The benchmark we used, and all the samples generated are available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712298.svg)](https://doi.org/10.5281/zenodo.3712298). There is a zip file per model, which is organized into the following directories:
+The benchmark we used, and all the samples generated are available at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3757091.svg)](https://doi.org/10.5281/zenodo.3757091)
+. There is a zip file per model, which is organized into the following directories:
 
 * `bool_formula`: includes the model's Boolean encoding as a BDD (`.dddmp`) and a CNF (`.dimacs`).
 * `goodness_of_fit`: includes a graphical analysis of the model's goodness-of-fit.
@@ -55,7 +56,7 @@ The syntax to run all scripts is:
 
 `Rscript script_name.r directory_name`
 
-Where `directory_name` is the folder that stores the models. Models can be downloaded at  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712298.svg)](https://doi.org/10.5281/zenodo.3712298).
+Where `directory_name` is the folder that stores the models. Models can be downloaded at  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3757091.svg)](https://doi.org/10.5281/zenodo.3757091).
 
 [run_samplers.r](https://github.com/rheradio/sat_sampling/blob/master/scripts/run_samplers.r) requires to have installed the following programs:
 
