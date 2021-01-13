@@ -24,8 +24,6 @@ if (length(args) == 0) {
   MODELS_PATH <- args[1]
 }
 
-writeLines(MODELS_PATH)
-
 pretty_name <- function(id) {
   if (id == "quicksampler") {
     "Quicksampler"

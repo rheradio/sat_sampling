@@ -156,6 +156,8 @@ for (m in models) {
     if (ext == "smarch") {
       # remove last column
       sample <- sample[-ncol(sample)]
+      sample[sample > 0] <- 1
+      sample[sample < 0] <- 0
             
       # Variable probability
       probability_sample <- rep(NA, ncol(sample))
