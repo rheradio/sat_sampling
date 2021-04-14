@@ -9,6 +9,10 @@ Material of the experiments reported in the following paper published in the 24T
 
 Some relevant analyses on configurable software systems remain intractable because they require examining vast and highly-constrained configuration spaces. Those analyses could be addressed through statistical inference, i.e., working with a much more tractable sample that later supports generalizing the results obtained to the entire configuration space. To make this possible, the laws of statistical inference impose an indispensable requirement: each member of the population must be equally likely to be included in the sample, i.e., the sampling process needs to be ``uniform''. Various SAT-samplers have been developed for generating uniform random samples at a reasonable computational cost. However, there is a lack of experimental validation over large configuration models that shows if the samplers indeed produce genuine uniform samples. This paper (i) presents a statistical goodness-of-fit test to verify to what extent samplers accomplish uniformity and (ii) reports the evaluation of four state-of-the-art samplers: Spur, QuickSampler, Unigen2, and Smarch.  According to our experimental results, only Spur satisfies both scalability and uniformity.
 
+## Acknowledgements
+
+This work has been partially funded by the Spanish Ministry of Science, Innovation and Universities (projects VITAL-3D DPI2016-77677-P, and OPHELIA RTI2018-101204-B-C22); the Community of Madrid (research network CAM RoboCity2030 S2013/MIT-2748);  the TASOVA network (MCIU-AEI TIN2017-90644-REDT); and the Junta de Andalucia (METAMORFOSIS project).
+
 ## Summary
 
 This repository is organized into two directories:
